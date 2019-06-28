@@ -18,3 +18,9 @@ function oddCount(n){
  return Math.floor( n / 2 );
  }
 
+* https://www.codewars.com/kata/switch-it-up/train/javascript
+```javascript
+function switchItUp(number){
+let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six','Seven', 'Eight', 'Nine'];
+return arr[number];
+}
