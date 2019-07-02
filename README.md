@@ -24,3 +24,21 @@ function switchItUp(number){
 let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six','Seven', 'Eight', 'Nine'];
 return arr[number];
 }
+* new solution
+
+* second new solution
+* https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+```javascript
+
+const reverseSeq = n => {
+  const arr = [];
+  for(let i = n; i > 0; i--){
+   arr.push(i); 
+  }
+  return arr;
+};
+
+* Hello 
+
+new docs
+new branch
