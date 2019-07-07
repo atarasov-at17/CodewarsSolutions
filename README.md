@@ -56,3 +56,6 @@ function getRectangleString(w, h) {
   return h > 1 ? (tb + center + tb) : tb.repeat(h);
   
   }
+
+
+Hard day 
