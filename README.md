@@ -59,3 +59,10 @@ function getRectangleString(w, h) {
 
 
 Hard day 
+
+*
+``` JavaScript
+
+function toBinary(n){
+  return +n.toString(2);
+}
