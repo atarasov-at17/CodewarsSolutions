@@ -66,3 +66,10 @@ Hard day
 function toBinary(n){
   return +n.toString(2);
 }
+* New task by CodeWars
+```https://www.codewars.com/kata/56069d0c4af7f633910000d3/solutions/javascript
+let search = (budget, prices) => prices
+    .filter(p => p <= budget)
+    .sort((a, b) => a - b)
+    .join(',')
+
