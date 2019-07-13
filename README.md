@@ -42,3 +42,49 @@ const reverseSeq = n => {
 
 new docs
 new branch
+
+hello
+
+* https://www.codewars.com/kata/print-a-rectangle-using-asterisks/train/javascript
+
+```JavaScript
+
+function getRectangleString(w, h) {
+  const rn = '\r\n';
+  const tb = '*'.repeat(w) + rn;
+  const center = (w > 1) ? ('*' + ' '.repeat(w - 2) + '*' + rn).repeat(h - 2) : '';
+  return h > 1 ? (tb + center + tb) : tb.repeat(h);
+  
+  }
+
+
+Hard day 
+
+*
+``` JavaScript
+
+function toBinary(n){
+  return +n.toString(2);
+}
+* New task by CodeWars
+```https://www.codewars.com/kata/56069d0c4af7f633910000d3/solutions/javascript
+let search = (budget, prices) => prices
+    .filter(p => p <= budget)
+    .sort((a, b) => a - b)
+    .join(',')
+
+
+*ttps://www.codewars.com/kata/5a5915b8d39ec5aa18000030/solutions/javascript
+
+```javascript
+
+add solution
+
+const findMissing = (arr1, arr2) => {
+  arr1 = arr1.sort();
+  arr2 = arr2.sort();
+  for(let i = 0; i < arr1.length; i++){
+    if(arr1[i] != arr2[i]) return arr1[i];
+  }
+}
+
