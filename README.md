@@ -88,3 +88,18 @@ const findMissing = (arr1, arr2) => {
   }
 }
 
+* https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+
+```javascript
+
+current Min
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+  let currMin = args[0];
+  for(let i = 1; i < args.length; i++){
+    if(args[i] < currMin) currMin = args[i];
+    }
+    return currMin;
+  }
+}
