@@ -64,3 +64,20 @@ function findDifference(a, b) {
 
 
 * nothing
+
+* https://www.codewars.com/kata/576bb71bbbcf0951d5000044/discuss/javascript
+
+```JavaScript
+
+function countPositivesSumNegatives(input) {
+    if (!input || !input.length) return [];
+    let a = 0, b = 0;
+    input.forEach(el => {
+     if (el > 0) {
+     a++;
+    } else {
+      b += el;
+    }
+  });
+   return [a, b];
+   }
