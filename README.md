@@ -62,65 +62,16 @@ function findDifference(a, b) {
   return Math.abs(( a[0] * a[1] * a[2] ) - ( b[0] * b[1] * b[2] ));
 }
 
+*https://www.codewars.com/kata/5a3f2925b6cfd78fb0000040/solutions/javascript
 
-* nothing
+Javascript
 
-* https://www.codewars.com/kata/576bb71bbbcf0951d5000044/discuss/javascript
-
-```JavaScript
-
-function countPositivesSumNegatives(input) {
-    if (!input || !input.length) return [];
-    let a = 0, b = 0;
-    input.forEach(el => {
-     if (el > 0) {
-     a++;
-    } else {
-      b += el;
+function solve(s){
+  if (s.length % 2) return -1;
+    while (/\(\)/g.test(s)) s = s.replace(/\(\)/g, "");
+  let cnt = 0;  
+    for (let i = 0; i < s.length -1; i += 2) {
+      s[i] !== s[i + 1] ? cnt+=2 : cnt++;   
     }
-  });
-   return [a, b];
-   }
-
-https://www.codewars.com/kata/lombok-encapsulation/train/java
-
-```Java
- 
-public class EncapsulationDemo {
-    private int number;
-    private String stringValue;
-    private Object anObject;
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public String getStringValue() {
-        return stringValue;
-    }
-
-    public void setStringValue(String stringValue) {
-        this.stringValue = stringValue;
-    }
-
-    public Object getAnObject() {
-        return anObject;
-    }
-
-    public void setAnObject(Object anObject) {
-        this.anObject = anObject;
-    }
-
-    public EncapsulationDemo() {
-    }
-
-    public EncapsulationDemo(int number, String stringValue, Object anObject) {
-        this.number = number;
-        this.stringValue = stringValue;
-        this.anObject = anObject;
-    }
+  return cnt;
 }
