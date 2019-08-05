@@ -75,3 +75,11 @@ function solve(s){
     }
   return cnt;
 }
+
+* https://www.codewars.com/kata/can-we-divide-it/train/javascript
+
+javascript
+
+function isDivideBy(number, a, b) {
+  return number % a === 0 && number % b === 0;
+}
