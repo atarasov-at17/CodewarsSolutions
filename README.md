@@ -126,3 +126,37 @@ function positiveSum(arr) {
 Hi
 
 Check check how is it work
+++++++++++++++++++++++++++
+
+Javascript
+
+const s = [45, 87, 53, 95, -1, 456, 0];
+
+
+  const f =[];
+  let min = s[0];
+  let max = s[0];
+  let minIndex = 0;
+  
+  for(let i = 1; i < s.length; i++){
+    if(s[i] < min) {
+      min = s[i];
+      minIndex = i;
+    }
+    
+    if(s[i] > max) max = s[i];
+ }
+ 
+//nsole.log(min, max, minIndex);
+
+for(let i = 0; i < s.length; i++){
+f.push(s[i]);
+}
+
+f.push(max + 1);
+
+for(let i = minIndex; i < s.length; i++) {
+f.push(s[i]);
+}
+
+console.log(f);
