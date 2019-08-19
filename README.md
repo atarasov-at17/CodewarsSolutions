@@ -160,3 +160,145 @@ f.push(s[i]);
 }
 
 console.log(f);
+
+```Javascript
+
+Skip welcome & menu and move to editor
+Textarea editor mode
+JS Bin features
+
+    Getting started
+    Keyboard Shortcuts
+    Exporting/importing gist
+
+Pro features
+
+    Private bins
+    Dropbox backup
+    Vanity URLs
+
+Upgrade to pro now
+Blog
+
+    The Return and The Refactor
+
+Help
+
+    Versions: Processors & core libraries
+    Ajax request to bins
+
+//  let arr = [10, 2, -4, 10, 6, -4, 98];
+
+​
+
+// // // [10, 2, -4, 6, 98];
+
+// // function unique (arr){
+
+// //   let a = []; 
+
+// //   for (let i = 0; i < arr.length; i++){
+
+    
+
+// //    //for (let j = 0; j < a.length; j++){
+
+// //     //if (a[j === arr[i]) return true;
+
+  
+
+// //     if (!a.includes(arr [i])) {
+
+// //       a.push(arr[i]);
+
+// //     }
+
+// //   }
+
+// //   return a;
+
+// // }
+
+// // console.log(unique(arr));
+
+​
+
+​
+
+// function unique2 (arr){
+
+//   const a = {};
+
+//   const f = [];
+
+  
+
+// //   10: true,
+
+// //    2 : tru,
+
+// //       '-4': true,
+
+// //         6: true,
+
+// //           98: true
+
+          
+
+// //O(1), O(n)
+
+  
+
+//   for (let i = 0; i < arr.length; i++){
+
+//     if (!a[arr[i]]) {
+
+//       f.push(arr[i]);
+
+//       a[arr[i]] = true;
+
+      
+
+//       console.log(a);
+
+//     }
+
+//   }
+
+//   return f;
+
+// }
+
+​
+
+======================
+
+  
+
+ let arr = [10, 2, 4, 10, 6, 4, 8]
+
+  
+
+  function unique3(arr){
+
+    let sort = Array(20).fill(0);
+
+    let result = [];
+
+    
+
+    for(let i = 0; i < arr.length; i++){
+
+      if (sort[arr[i]] === 0) {
+
+        result.push(arr[i]);
+
+        sort[arr[i]]++;
+
+      }
+
+    }
+
+  return result;
+}
+console.log(unique2(arr));
