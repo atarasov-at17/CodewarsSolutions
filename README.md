@@ -305,3 +305,8 @@ console.log(unique2(arr));
 
 ``` hello
 Check check
+
+
+Проверка работы
+
+system don't work
