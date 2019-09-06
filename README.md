@@ -353,3 +353,10 @@ system don't work
    return res.substr(0, res.length - 3);
    }
 
+https://www.codewars.com/kata/beginner-series-number-1-school-paperwork/train/javascript
+*/
+
+function paperwork(n, m) {
+   return (n < 0 || m <0)? 0: n*m;
+}
+
