@@ -359,4 +359,11 @@ https://www.codewars.com/kata/beginner-series-number-1-school-paperwork/train/ja
 function paperwork(n, m) {
    return (n < 0 || m <0)? 0: n*m;
 }
-
+* https://www.codewars.com/kata/volume-of-a-cup/train/javascript
+  
+  function cupVolume(d1, d2, height){
+     let r1 = d1 / 2;
+     let r2 = d2 / 2;
+     v  = Math.PI * height * (r1 ** 2 + r1 * r2 + r2 ** 2) / 3;
+     return +v.toFixed(2);
+    }
