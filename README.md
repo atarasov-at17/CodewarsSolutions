@@ -367,3 +367,16 @@ function paperwork(n, m) {
      v  = Math.PI * height * (r1 ** 2 + r1 * r2 + r2 ** 2) / 3;
      return +v.toFixed(2);
     }
+
+***https://www.codewars.com/kata/exes-and-ohs/train/javascript
+   
+   function XO(str) {
+      let x = 0;
+      let o = 0;
+      str = str.toLowerCase();
+      for (let i = 0; i < str.length; i++){
+        if (str[i] === 'x') x++;
+        if (str[i] === 'o') o++;
+      }
+      return (x === o)? true : false;
+   }
